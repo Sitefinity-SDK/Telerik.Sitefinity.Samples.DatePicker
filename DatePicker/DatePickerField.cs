@@ -19,7 +19,6 @@ using System.Linq;
 namespace DatePicker
 {
     [ControlDesigner(typeof(DatePickerFieldDesigner))]
-    //[DatabaseMapping(DatabaseMapping.Date)]
     [DatabaseMapping(UserFriendlyDataType.Date)]
     public class DatePickerField : FieldControl, IFormFieldControl
     {
