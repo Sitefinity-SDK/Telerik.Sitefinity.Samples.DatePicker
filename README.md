@@ -14,7 +14,7 @@ Using the Date Picker sample, you can:
 
 ### Requirements
 
-* Sitefinity 6.3 license
+* Sitefinity license
 
 * .NET Framework 4
 
@@ -46,7 +46,7 @@ The project refers to the following NuGet packages:
 
 *	Telerik.Web.UI.nupkg
 
-*	OpenAccess.Core.nupkg
+*	DataAccess.Core.nupkg
 
 **SitefinityWebApp** library
 
@@ -58,7 +58,7 @@ The project refers to the following NuGet packages:
 
 *	Telerik.Sitefinity.Content.nupkg
 
-*	OpenAccess.Core.nupkg
+*	DataAccess.Core.nupkg
 
 You can find the packages in the official [Sitefinity Nuget Server](http://nuget.sitefinity.com).
 
