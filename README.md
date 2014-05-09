@@ -1,6 +1,7 @@
 Telerik.Sitefinity.Samples.DatePicker
 =====================================
 
+[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.DatePicker.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.DatePicker.CI/)
 
 The Date Picker sample projects contains a _Forms_ widget with a custom widget designer. The user can drag and drop the _DatePicker_ widget from the _Forms_ toolbox and place the widget in a form. In the form, the widget defines a _RadDatePicker_ that enables the user to choose a date. The custom widget designer of the form allows users to define a range that is automatically validated by the _RadDatePicker_ built-in validation. 
 
@@ -46,7 +47,7 @@ The project refers to the following NuGet packages:
 
 *	Telerik.Web.UI.nupkg
 
-*	DataAccess.Core.nupkg
+*	Telerik.DataAccess.Core.nupkg
 
 **SitefinityWebApp** library
 
@@ -58,9 +59,9 @@ The project refers to the following NuGet packages:
 
 *	Telerik.Sitefinity.Content.nupkg
 
-*	DataAccess.Core.nupkg
+*	Telerik.DataAccess.Core.nupkg
 
-You can find the packages in the official [Sitefinity Nuget Server](http://nuget.sitefinity.com).
+You can find the packages in the official [Sitefinity NuGet Server](http://nuget.sitefinity.com).
 
 ### Login
 
