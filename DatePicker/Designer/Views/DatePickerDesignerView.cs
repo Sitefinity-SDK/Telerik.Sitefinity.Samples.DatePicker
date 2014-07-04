@@ -1,12 +1,12 @@
-﻿using System.Web.UI;
+﻿using System.Collections.Generic;
+using System.Web.UI;
 using Telerik.Sitefinity.Web.UI;
-using System.Collections.Generic;
-using Telerik.Web.UI;
 using Telerik.Sitefinity.Web.UI.ControlDesign;
+using Telerik.Web.UI;
 
 namespace DatePicker
 {
-    class DatePickerDesignerView : ContentViewDesignerView
+    public class DatePickerDesignerView : ContentViewDesignerView
     {
         public override string ViewTitle
         {
@@ -69,7 +69,6 @@ namespace DatePicker
 
         protected override void InitializeControls(GenericContainer container)
         {
-
         }
 
         protected override HtmlTextWriterTag TagKey

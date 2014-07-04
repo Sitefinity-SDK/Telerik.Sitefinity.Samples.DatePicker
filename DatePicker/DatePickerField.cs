@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Telerik.Sitefinity.Data.Metadata;
+using Telerik.Sitefinity.Localization;
 using Telerik.Sitefinity.Metadata.Model;
 using Telerik.Sitefinity.Model;
+using Telerik.Sitefinity.Modules.Forms;
 using Telerik.Sitefinity.Modules.Forms.Web.UI.Fields;
 using Telerik.Sitefinity.Web.UI;
 using Telerik.Sitefinity.Web.UI.ControlDesign;
 using Telerik.Sitefinity.Web.UI.Fields;
 using Telerik.Web.UI;
-using Telerik.Sitefinity.Localization;
-using Telerik.Sitefinity.Modules.Forms;
-using System.Linq;
 
 namespace DatePicker
 {
@@ -22,7 +22,7 @@ namespace DatePicker
     [DatabaseMapping(UserFriendlyDataType.Date)]
     public class DatePickerField : FieldControl, IFormFieldControl
     {
-        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        private JavaScriptSerializer serializer = new JavaScriptSerializer();
 
         public string Minimum
         {
@@ -78,12 +78,14 @@ namespace DatePicker
             this.Value = DateTime.Now;
             if (this.Minimum != null)
             {
-                this.DatePicker.MinDate = (DateTime)serializer.Deserialize(this.Minimum, typeof(DateTime));
+                this.DatePicker.MinDate = (DateTime)this.serializer.Deserialize(this.Minimum, typeof(DateTime));
             }
+
             if (this.Maximum != null)
             {
-                this.DatePicker.MaxDate = (DateTime)serializer.Deserialize(this.Maximum, typeof(DateTime));
+                this.DatePicker.MaxDate = (DateTime)this.serializer.Deserialize(this.Maximum, typeof(DateTime));
             }
+
             (this.TitleControl as Label).Text = this.Title;
             (this.DescriptionControl as Label).Text = this.Description;
             (this.ExampleControl as Label).Text = this.Example;
@@ -95,6 +97,7 @@ namespace DatePicker
             {
                 return this.DatePicker.SelectedDate;
             }
+
             set
             {
                 this.DatePicker.SelectedDate = value as DateTime?;
@@ -121,7 +124,6 @@ namespace DatePicker
 
         public override IEnumerable<ScriptReference> GetScriptReferences()
         {
-
             var scripts = new List<ScriptReference>(base.GetScriptReferences())
                     {
                         new ScriptReference("DatePicker.DatePickerField.js", typeof(DatePickerField).Assembly.FullName)
@@ -143,6 +145,7 @@ namespace DatePicker
 
                 return this.metaField;
             }
+
             set
             {
                 this.metaField = value;

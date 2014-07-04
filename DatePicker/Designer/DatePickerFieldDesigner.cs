@@ -5,7 +5,7 @@ using Telerik.Sitefinity.Web.UI.ControlDesign;
 
 namespace DatePicker
 {
-    class DatePickerFieldDesigner : ContentViewDesignerBase
+    public class DatePickerFieldDesigner : ContentViewDesignerBase
     {
         /// <summary>
         /// The script control type name passed to the <see cref="T:System.Web.UI.ScriptControlDescriptor"/>. It defaults to the full name
@@ -20,6 +20,7 @@ namespace DatePicker
                 return typeof(ContentViewDesignerBase).FullName;
             }
         }
+
         protected override void AddViews(Dictionary<string, ControlDesignerView> views)
         {
             var myView = new DatePickerDesignerView();
