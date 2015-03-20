@@ -906,11 +906,6 @@
     <Content Include="App_Data\RadSpell\fr-FR.tdf" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Sitefinity\Configuration\DataConfig.config">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Telerik.Sitefinity.Samples.Common\Telerik.Sitefinity.Samples.Common.csproj">
       <Name>Telerik.Sitefinity.Samples.Common</Name>
     </ProjectReference>
@@ -1462,6 +1457,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OpenAccessNuGet.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Sitefinity\Configuration\StartupConfig.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
