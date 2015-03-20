@@ -7,6 +7,7 @@ using Telerik.Sitefinity.Modules.Forms.Web.UI;
 using Telerik.Sitefinity.Modules.Forms.Web.UI.Fields;
 using Telerik.Sitefinity.Samples.Common;
 using Telerik.Sitefinity.Services;
+using Telerik.Sitefinity.Abstractions;
 
 namespace SitefinityWebApp
 {
@@ -23,15 +24,19 @@ namespace SitefinityWebApp
         private const string DatePickerFormWidgetPageName = "DatePicker Form Widget";
         private const string DatePickerFormId = "C9C544BF-1152-4223-94DB-6119CD5E973A";
 
+
         protected void Application_Start(object sender, EventArgs e)
         {
-            SystemManager.ApplicationStart += this.SystemManager_ApplicationStart; 
+            Bootstrapper.Initialized += Bootstrapper_Initialized;
         }
 
-        private void SystemManager_ApplicationStart(object sender, EventArgs e)
+        private void Bootstrapper_Initialized(object sender, Telerik.Sitefinity.Data.ExecutedEventArgs e)
         {
-            SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(this.CreateSampleWorker);
-            SystemManager.RunWithElevatedPrivilege(worker);
+            if ((Bootstrapper.IsDataInitialized) && (e.CommandName == "Bootstrapped"))
+            {
+                SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(this.CreateSampleWorker);
+                SystemManager.RunWithElevatedPrivilege(worker);
+            }
         }
 
         private void CreateSampleWorker(object[] args)
@@ -64,8 +69,6 @@ namespace SitefinityWebApp
                 form.FormId = new Guid(DatePickerFormId);
 
                 SampleUtilities.AddControlToPage(new Guid(DatePickerFormWidgetPageId), form, "Content", "Forms Control");
-
-                SampleUtilities.CreateUsersAndRoles();
             }
         }
 
