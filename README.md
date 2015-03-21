@@ -35,24 +35,20 @@ For a history and additional information related to package versions on differen
 
 ### Installation instructions: SDK Samples from GitHub
 
-1. In Solution Explorer, navigate to _SitefinityWebApp_ -> *App_Data* -> _Sitefinity_ -> _Configuration_ and select the **StartupConfig.config** file. 
+1. In Solution Explorer, navigate to _SitefinityWebApp_ » *App_Data* » _Sitefinity_ » _Configuration_ and select the **StartupConfig.config** file. 
 2. Modify the **dbType**, **sqlInstance** and **dbName** values to match your server settings.
 3. Build the solution.
 
-For version-specific details about the required Sitefinity NuGet packages for this sample application, click on [Releases]
- (https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.DatePicker/releases).
+For version-specific details about the required Sitefinity NuGet packages for this sample application, click on [Releases](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.DatePicker/releases).
 
 ### Login
 
-To login to Sitefinity backend, use the following credentials: 
-
-**Username:** admin
+To login to Sitefinity backend, use the following credentials:  
+**Username:** admin   
 **Password:** password
 
 ### Additional resources
-
-[Developers Guide](http://www.sitefinity.com/documentation/documentationarticles/developers-guide)
-
-[Create a date picker widget - create the widget](http://www.sitefinity.com/documentation/documentationarticles/developers-guide/how-to/how-to-create-a-date-picker-control/creating-the-control)
-
-[Create a date picker widget - create the widget designer](http://www.sitefinity.com/documentation/documentationarticles/developers-guide/how-to/how-to-create-a-date-picker-control/creating-the-control-designer)
+Sitefinity documentation
+* [Develop: Use and extend Sitefinity functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)
+* [Date picker widget: Create the control](http://docs.sitefinity.com/date-picker-widget-create-the-control)
+* [Date picker widget: Create the control designer](http://docs.sitefinity.com/date-picker-widget-create-the-control-designer)
