@@ -1145,86 +1145,17 @@
     <Content Include="App_Data\Sitefinity\Configuration\StartupConfig.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="OpenAccessNuGet.targets" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ResourcePackages\Foundation\razorgenerator.directives" />
-    <Content Include="ResourcePackages\SemanticUI\razorgenerator.directives" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="ResourcePackages\Bootstrap\assets\dist\images\social-share\" />
     <Folder Include="ResourcePackages\Bootstrap\assets\src\images\social-share\" />
     <Folder Include="ResourcePackages\Bootstrap\MVC\Scripts\SearchBox\" />
-    <Folder Include="ResourcePackages\Foundation\assets\dist\css\" />
-    <Folder Include="ResourcePackages\Foundation\assets\dist\images\social-share\" />
-    <Folder Include="ResourcePackages\Foundation\assets\dist\js\" />
-    <Folder Include="ResourcePackages\Foundation\assets\fonts\" />
-    <Folder Include="ResourcePackages\Foundation\assets\src\images\social-share\" />
-    <Folder Include="ResourcePackages\Foundation\assets\src\js\" />
-    <Folder Include="ResourcePackages\Foundation\assets\src\sass\sitefinity\gallery\" />
-    <Folder Include="ResourcePackages\Foundation\assets\src\sass\sitefinity\media\" />
-    <Folder Include="ResourcePackages\Foundation\assets\src\sass\sitefinity\navigation\" />
-    <Folder Include="ResourcePackages\Foundation\assets\src\sass\sitefinity\news\" />
-    <Folder Include="ResourcePackages\Foundation\assets\src\sass\sitefinity\searchBox\" />
-    <Folder Include="ResourcePackages\Foundation\assets\src\sass\sitefinity\searchResults\" />
-    <Folder Include="ResourcePackages\Foundation\client-components\fields\html-field\" />
-    <Folder Include="ResourcePackages\Foundation\css\" />
-    <Folder Include="ResourcePackages\Foundation\GridSystem\Templates\" />
-    <Folder Include="ResourcePackages\Foundation\img\" />
-    <Folder Include="ResourcePackages\Foundation\js\foundation\" />
-    <Folder Include="ResourcePackages\Foundation\js\vendor\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Scripts\SearchBox\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\ContentBlock\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\ContentPager\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\ImageGallery\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\Image\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\Layouts\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\Navigation\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\News\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\SearchBox\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\SearchResults\" />
-    <Folder Include="ResourcePackages\Foundation\MVC\Views\SocialShare\" />
-    <Folder Include="ResourcePackages\Foundation\sass\navigation\" />
-    <Folder Include="ResourcePackages\Foundation\sass\news\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\dist\css\themes\default\assets\fonts\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\dist\images\social-share\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\dist\js\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\fonts\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\src\images\social-share\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\src\less\sitefinity\gallery\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\src\less\sitefinity\media\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\src\less\sitefinity\navigation\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\src\less\sitefinity\profile\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\src\less\sitefinity\searchBox\" />
-    <Folder Include="ResourcePackages\SemanticUI\assets\src\less\sitefinity\searchResults\" />
-    <Folder Include="ResourcePackages\SemanticUI\client-components\fields\html-field\" />
-    <Folder Include="ResourcePackages\SemanticUI\css\" />
-    <Folder Include="ResourcePackages\SemanticUI\fonts\" />
-    <Folder Include="ResourcePackages\SemanticUI\GridSystem\Templates\" />
-    <Folder Include="ResourcePackages\SemanticUI\images\social-icons\" />
-    <Folder Include="ResourcePackages\SemanticUI\javascript\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Scripts\Navigation\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Scripts\SearchBox\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\AccountActivation\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\ChangePassword\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\ContentBlock\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\ContentPager\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\ImageGallery\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\Image\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\Layouts\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\LoginForm\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\LoginStatus\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\Navigation\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\News\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\Profile\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\Registration\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\SearchBox\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\SearchResults\" />
-    <Folder Include="ResourcePackages\SemanticUI\MVC\Views\SocialShare\" />
-    <Folder Include="ResourcePackages\SemanticUI\sass\navigation\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
