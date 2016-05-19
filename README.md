@@ -1,4 +1,4 @@
-Telerik.Sitefinity.Samples.DatePicker
+Progress.Sitefinity.Samples.DatePicker
 =====================================
 
 [![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.DatePicker.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.DatePicker.CI/)
@@ -8,13 +8,13 @@ The Date Picker sample projects contains a _Forms_ widget with a custom widget d
 Using the Date Picker sample, you can: 
 
 * Create a _DatePicker_ form widget
-* Register the widget in Sitefinity toolbox
+* Register the widget in Sitefinity CMS toolbox
 * Create a custom widget designer to manage the range of the date 
 * Create a form and a page that displays the form from the code. 
 
 
 ### Requirements
-* Sitefinity license
+* Sitefinity CMS license
 * .NET Framework 4
 * Visual Studio 2012
 * Microsoft SQL Server 2008R2 or later versions
@@ -39,16 +39,16 @@ For a history and additional information related to package versions on differen
 2. Modify the **dbType**, **sqlInstance** and **dbName** values to match your server settings.
 3. Build the solution.
 
-For version-specific details about the required Sitefinity NuGet packages for this sample application, click on [Releases](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.DatePicker/releases).
+For version-specific details about the required Sitefinity CMS NuGet packages for this sample application, click on [Releases](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.DatePicker/releases).
 
 ### Login
 
-To login to Sitefinity backend, use the following credentials:  
+To login into the Sitefinity CMS backend, use the following credentials:  
 **Username:** admin   
 **Password:** password
 
 ### Additional resources
-Sitefinity documentation
-* [Develop: Use and extend Sitefinity functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)
+Progress Sitefinity CMS documentation
+* [Develop: Use and extend Sitefinity CMS functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)
 * [Date picker widget: Create the control](http://docs.sitefinity.com/date-picker-widget-create-the-control)
 * [Date picker widget: Create the control designer](http://docs.sitefinity.com/date-picker-widget-create-the-control-designer)
