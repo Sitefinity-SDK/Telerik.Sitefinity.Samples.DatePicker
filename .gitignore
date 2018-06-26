@@ -188,3 +188,4 @@ SitefinityWebApp/packages/*
 SitefinityWebApp/ResourcePackages/Foundation/*
 SitefinityWebApp/ResourcePackages/SemanticUI/*
 SitefinityWebApp/.nuget/NuGet.exe
+.vs/
