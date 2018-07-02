@@ -757,8 +757,6 @@
   <ItemGroup>
     <Content Include="App_Data\Sitefinity\WebsiteTemplates\Samples\App_Themes\Samples\Global\main.css" />
     <Content Include="App_Data\Sitefinity\WebsiteTemplates\Samples\App_Themes\Samples\Images\logo.jpg" />
-    <Content Include="App_Data\Sitefinity\ClientBin\Telerik.Sitefinity.Analytics.xap" />
-    <Content Include="App_Data\Sitefinity\ClientBin\Telerik.Sitefinity.Silverlight.xap" />
     <Content Include="Default.aspx" />
     <Content Include="extensions.bundle.js" />
     <Content Include="Global.asax" />
