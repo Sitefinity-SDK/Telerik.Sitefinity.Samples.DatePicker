@@ -184,7 +184,12 @@ FakesAssemblies/
 *.jmconfig
 .nuget/NuGet.exe
 
+SitefinityWebApp/App_Data/*
+!SitefinityWebApp/App_Data/RadSpell/*
+!SitefinityWebApp/App_Data/Sitefinity/WebsiteTemplates/*
+!SitefinityWebApp/App_Data/Sitefinity/Configuration/StartupConfig.config
 SitefinityWebApp/packages/*
 SitefinityWebApp/ResourcePackages/Foundation/*
 SitefinityWebApp/ResourcePackages/SemanticUI/*
 SitefinityWebApp/.nuget/NuGet.exe
+.vs/
